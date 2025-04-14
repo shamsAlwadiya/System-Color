@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Color Converter</title>
+    <style>
+
+    </style>
+</head>
+
+<body>
+
+    <section class="color-converter-section">
+        <h2>🎨 Color Converter</h2>
+        <p>Convert between HEX and RGB easily and quickly.</p>
+
+        <div class="converter-box">
+            <div class="input-group">
+                <label for="hexInput">HEX</label>
+                <input type="text" id="hexInput" placeholder="#2196F3">
+            </div>
+
+            <div class="input-group">
+                <label for="rgbInput">RGB</label>
+                <input type="text" id="rgbInput" placeholder="33, 150, 243">
+            </div>
+
+            <div class="color-preview" id="colorPreview"></div>
+
+            <div class="copy-buttons">
+                <button onclick="copyHex()">📋 Copy HEX</button>
+                <button onclick="copyRGB()">📋 Copy RGB</button>
+            </div>
+        </div>
+    </section>
+
+    <script src="main.js"></script>
+
+</body>
+
+</html>

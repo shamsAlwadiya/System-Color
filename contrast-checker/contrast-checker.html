@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ar">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Contrast checker</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="contrast-checker">
+      <h2>Constrast Checker🧪</h2>
+      <p>
+        Test the color contrast between text and background according to WCAG
+        accessibility standards.
+      </p>
+
+      <div class="form-group">
+        <div>
+          <label for="fgColor">Text Color</label>
+          <input type="color" id="fgColor" value="#000000" />
+        </div>
+        <div>
+          <label for="bgColor">Background Color</label>
+          <input type="color" id="bgColor" value="#ffffff" />
+        </div>
+      </div>
+
+      <div
+        class="preview"
+        id="preview"
+        style="background-color: #ffffff; color: #000000"
+      >
+        This is an example of text.
+      </div>
+
+      <div class="result" id="result">
+        Contrast ratio: <span id="ratio">-</span>
+      </div>
+    </section>
+
+    <script src="main.js"></script>
+  </body>
+</html>

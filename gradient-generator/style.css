@@ -1,0 +1,65 @@
+body {
+  font-family: Arial, sans-serif;
+  direction: rtl;
+  background-color: #f5f5f5;
+  margin: 0;
+  padding: 0;
+}
+
+.gradient-generator {
+  max-width: 700px;
+  margin: auto;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+h2 {
+  margin-bottom: 10px;
+}
+
+.form-group {
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.form-group input,
+.form-group select {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.preview-box {
+  height: 200px;
+  border-radius: 12px;
+  margin-top: 30px;
+  border: 1px solid #999;
+}
+
+.css-output {
+  margin-top: 20px;
+  background: #eee;
+  padding: 10px;
+  border-radius: 8px;
+  font-family: monospace;
+  direction: ltr;
+  text-align: left;
+  overflow-x: auto;
+}
+
+.copy-btn {
+  margin-top: 10px;
+  padding: 8px 14px;
+  background-color: #2196f3;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.copy-btn:hover {
+  background-color: #1976d2;
+}

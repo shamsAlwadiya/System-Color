@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ar">
+  <head>
+    <meta charset="UTF-8" />
+    <title>مولد التدرجات</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="gradient-generator">
+      <h2>Gradient Generator🌈</h2>
+      <p>
+        Choose your colors and gradient type to get a stylish gradient with
+        ready CSS code!
+      </p>
+
+      <div class="form-group">
+        <label
+          >Starting color : <input type="color" id="color1" value="#ff8a00"
+        /></label>
+        <label
+          >Ending Color<input type="color" id="color2" value="#e52e71"
+        /></label>
+      </div>
+
+      <div class="form-group">
+        <label
+          >Gradient type:
+          <select id="typeSelect">
+            <option value="linear">Linear</option>
+            <option value="radial">Radial</option>
+          </select>
+        </label>
+
+        <label id="angleLabel">
+          Angle :
+          <input type="number" id="angleInput" value="90" min="0" max="360" />°
+        </label>
+      </div>
+
+      <div class="preview-box" id="previewBox"></div>
+
+      <div class="css-output" id="cssOutput"></div>
+      <button class="copy-btn" onclick="copyCSS()">Copy</button>
+    </section>
+
+    <script src="main.js"></script>
+  </body>
+</html>
